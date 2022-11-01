@@ -1,0 +1,50 @@
+import { defineNuxtPlugin } from "#app";
+import PrimeVue from "primevue/config";
+import Toast from 'primevue/toast';
+import Button from "primevue/button";
+import InputText from "primevue/inputtext";
+import Menubar from 'primevue/menubar';
+import DataTable from "primevue/datatable";
+import Column  from "primevue/column";
+import ColumnGroup from 'primevue/columngroup';
+import Row from 'primevue/row';
+import Toolbar  from "primevue/toolbar";
+import Dialog  from "primevue/dialog";
+import Dropdown from "primevue/dropdown";
+import Dock from 'primevue/dock';
+import Sidebar from 'primevue/sidebar';
+import Splitter from 'primevue/splitter';
+import SplitterPanel from 'primevue/splitterpanel';
+import Panel from 'primevue/panel';
+import Divider from 'primevue/divider';
+import Card from 'primevue/card';
+import Tree from 'primevue/tree';
+import TabView from 'primevue/tabview';
+import TabPanel from 'primevue/tabpanel';
+//optional for row
+
+export default defineNuxtPlugin((nuxtApp) => {
+    nuxtApp.vueApp.use(PrimeVue, {ripple: true});
+    nuxtApp.vueApp.component('Toast', Toast);
+    nuxtApp.vueApp.component('Button', Button);
+    nuxtApp.vueApp.component('InputText', InputText);
+    nuxtApp.vueApp.component('Menubar', Menubar);
+    nuxtApp.vueApp.component('DataTable', DataTable);
+    nuxtApp.vueApp.component('Column', Column);
+    nuxtApp.vueApp.component('ColumnGroup', ColumnGroup);
+    nuxtApp.vueApp.component('Row', Row);
+    nuxtApp.vueApp.component('Toolbar', Toolbar);
+    nuxtApp.vueApp.component('Dialog', Dialog);
+    nuxtApp.vueApp.component('Dropdown', Dropdown);
+    nuxtApp.vueApp.component('Dock',Dock);
+    nuxtApp.vueApp.component('Sidebar',Sidebar);
+    nuxtApp.vueApp.component('Splitter',Splitter);
+    nuxtApp.vueApp.component('SplitterPanel',SplitterPanel);
+    nuxtApp.vueApp.component('Panel',Panel);
+    nuxtApp.vueApp.component('Divider',Divider);
+    nuxtApp.vueApp.component('Card',Card);
+    nuxtApp.vueApp.component('Tree',Tree);
+    nuxtApp.vueApp.component('TabView',TabView);
+    nuxtApp.vueApp.component('TabPanel',TabPanel);
+    //other components that you need
+});
